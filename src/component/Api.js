@@ -28,44 +28,44 @@ export default class Ccomponent extends Component {
                     });
                 }
             )
-        fetch("http://0.0.0.0:5000/category/29", {
-            method: 'delete'})
-            .then((response) => {
-                return response.json();
-        })
-            .then((data) => {
-                console.log(data);
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-        let data = {data: "New"};
-        fetch("http://0.0.0.0:5000/category/", {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json;charset=utf-8'
-            },
-            body: JSON.stringify(data)})
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                console.log(data)
-            });
-        let put = {data: "Old"};
-        let id = 30
-        fetch("http://0.0.0.0:5000/category/"+ id, {
-            method: 'put',
-            headers: {
-                'Content-Type': 'application/json;charset=utf-8'
-            },
-            body: JSON.stringify(put)})
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                console.log(data)
-            });
+        // fetch("http://0.0.0.0:5000/category/29", {
+        //     method: 'delete'})
+        //     .then((response) => {
+        //         return response.json();
+        // })
+        //     .then((data) => {
+        //         console.log(data);
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     })
+        // let data = {data: "New"};
+        // fetch("http://0.0.0.0:5000/category/", {
+        //     method: 'post',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=utf-8'
+        //     },
+        //     body: JSON.stringify(data)})
+        //     .then((response) => {
+        //         return response.json();
+        //     })
+        //     .then((data) => {
+        //         console.log(data)
+        //     });
+        // let put = {data: "Old"};
+        // let id = 30
+        // fetch("http://0.0.0.0:5000/category/"+ id, {
+        //     method: 'put',
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=utf-8'
+        //     },
+        //     body: JSON.stringify(put)})
+        //     .then((response) => {
+        //         return response.json();
+        //     })
+        //     .then((data) => {
+        //         console.log(data)
+        //     });
 
     }
 
